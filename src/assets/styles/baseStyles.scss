@@ -1,4 +1,5 @@
-@import './theme.scss';
+
+@use './theme.scss';
 
 *,
 *::before,
@@ -10,7 +11,7 @@
 
 :focus-visible {
   outline-style: outset;
-  outline-color: $pink_100;
+  outline-color: theme.$pink_100;
   outline-width: 3px;
   border-radius: 3px;
   outline-offset: 2px;
@@ -28,11 +29,11 @@ body {
   background-color: #FFF4F4;
 }
 
-@media (min-width: $breakpoint-tablet) {
+@media (min-width: theme.$breakpoint-tablet) {
 }
 
-@media (max-width: $breakpoint-tablet) {
+@media (max-width: theme.$breakpoint-tablet) {
 }
 
-@media (max-width: $breakpoint-tablet) {
+@media (max-width: theme.$breakpoint-tablet) {
 }
