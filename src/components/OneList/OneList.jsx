@@ -15,7 +15,7 @@ export default function OneList({title, abstract, complete}) {
       </div>
     </div>
   )
-}
+}    
 
 OneList.defaultProps = {
   abstract: 'No abstract provided',

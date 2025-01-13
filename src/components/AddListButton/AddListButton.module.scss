@@ -1,0 +1,26 @@
+@use '../../assets/styles/theme.scss';
+
+.addListButton{
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  padding: 5px;
+  align-items: center;
+  border-radius: 20px;
+  justify-content: center;
+  padding-right: 10px;
+  color: white;
+  background-color: theme.$pinkish-red;;
+  border: 2px solid theme.$pinkish-red-dark;
+  
+  img{
+    height: 30px;
+    padding-right: 2px;
+    filter: opacity(0.25);
+  }
+  span{
+    font-size: 22px;
+    font-weight: 900;
+    padding-top: 1px;
+  }
+}
