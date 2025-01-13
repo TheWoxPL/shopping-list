@@ -1,4 +1,5 @@
 import styles from './CreateListForm.module.scss';
+import { Link } from "react-router";
 
 export default function CreateListForm() {
   return (
@@ -12,7 +13,9 @@ export default function CreateListForm() {
             <span>Imporant</span>
           </div>
           <div className={styles.buttonsArea}>
-            <button className={styles.cancelButton}>Cancel</button>
+            <button className={styles.cancelButton} >
+              <Link to='/'>Cancel</Link>
+            </button>
             <button className={styles.createButton} type='submit'>Create</button>
           </div>
         </form>

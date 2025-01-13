@@ -14,8 +14,9 @@
     text-align: center;
     flex: 1;
     align-items: end;
-    font-size: 30px;
+    font-size: 35px;
     font-weight: 900;
+    color: theme.$pinkish-red-dark;
   }
   .form{
     // background-color: rgb(101, 101, 224);
@@ -103,6 +104,10 @@
       }
       .createButton{
         background-color: theme.$pinkish-red;
+      }
+      a{
+        text-decoration: none;
+        color: inherit;
       }
     }
   }
