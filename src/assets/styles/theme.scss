@@ -1,0 +1,107 @@
+// FONT SIZES
+$font-size-desktop:24px;
+$font-size-desktop-small:20px;
+$font-size-desktop-large:32px;
+$font-size-desktop-title:64px;
+$font-size-mobile:20px;
+$font-size-mobile-tiny:14px;
+$font-size-mobile-small:16px;
+$font-size-mobile-large:24px;
+$font-size-mobile-title:32px;
+
+// BREAKPOINTS
+$breakpoint-tablet: 700px;
+$breakpoint-desktop: 1100px;
+
+// COLORS
+
+// scheme for color names
+// color-name_color-intensiveness_transparency
+
+$language-button-unmarked: rgba(103, 103, 103, 0.668);
+
+$dark-tile-background-mobile: rgba(0, 0, 0, 0.35);
+
+$light-tile-background-mobile: rgba(255, 255, 255, 0.35);
+
+$light-footer-top-mobile: #f8deff;
+
+$light-footer-bottom-mobile: #adccff;
+
+$dark-navbar-mobile: rgba(8, 0, 16);
+
+$dark-footer-top-mobile: #450043;
+
+$dark-footer-bottom-mobile: #0e011d;
+
+$dark-sidebar-mobile: #140d19;
+
+$light-sidebar-mobile: #d7cffc;
+
+// grey
+$grey_10: #bcbbbe;
+
+$grey_20_25: #0b090940;
+
+$grey_25: #999999;
+
+$grey_30: #4e4e4e;
+
+$grey_40: #464646;
+
+$grey_50: #404040;
+
+$light_grey_50: #e3e3e3;
+
+$grey_60: #2f2c31;
+
+$grey_70: #0e011d;
+
+$grey_80: #0a0114;
+
+// black
+$black: #000;
+
+$black_100_25: rgba(0, 0, 0, 0.25);
+
+$black_100_30: rgba(0, 0, 0, 0.3);
+
+$black_100_35: rgba(0, 0, 0, 0.35);
+
+$black_100_40: rgba(0, 0, 0, 0.4);
+
+$black_100_50: rgba(0, 0, 0, 0.5);
+
+$black_100_60: rgba(0, 0, 0, 0.6);
+
+$black_100_80: rgba(0, 0, 0, 0.8);
+
+// white
+$white: #fff;
+
+$white_100_30: rgba(255, 255, 255, 0.5);
+
+$white_100_35: rgba(255, 255, 255, 0.35);
+
+$white_100_50: rgba(255, 255, 255, 0.5);
+
+$white_100_75: rgba(255, 255, 255, 0.75);
+
+// other
+
+$pink_50: #f9dbfb;
+
+$pink_100: #fa75ff;
+
+$violet_50: #d7cffc;
+
+$violet_80: #140d19;
+
+$light-blue-80: #7cadff;
+
+// TRANSITIONS
+
+$transition-time: 0.12s ease;
+
+
+$light_border: #413d5b;

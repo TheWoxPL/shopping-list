@@ -1,0 +1,38 @@
+@import './theme.scss';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:focus-visible {
+  outline-style: outset;
+  outline-color: $pink_100;
+  outline-width: 3px;
+  border-radius: 3px;
+  outline-offset: 2px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.6rem;
+  margin: 0;
+  height: 100vh;
+  background-color: #FFF4F4;
+}
+
+@media (min-width: $breakpoint-tablet) {
+}
+
+@media (max-width: $breakpoint-tablet) {
+}
+
+@media (max-width: $breakpoint-tablet) {
+}
