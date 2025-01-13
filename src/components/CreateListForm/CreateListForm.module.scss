@@ -1,0 +1,119 @@
+@use '../../assets/styles/theme.scss';
+
+.createListForm{
+  display: flex;
+  flex-direction: column;
+  max-height: 600px;
+  height: 100%;
+  // background-color: red;
+  align-self: center;
+  width: 100%;
+  align-items: center;
+
+  .title{
+    text-align: center;
+    flex: 1;
+    align-items: end;
+    font-size: 30px;
+    font-weight: 900;
+  }
+  .form{
+    // background-color: rgb(101, 101, 224);
+    max-width: 350px;
+    width: 100%;
+    display: flex;
+    flex: 6;
+    flex-direction: column;
+    padding: 20px;
+
+    .listName, .details{
+      margin: 10px 0px;
+      border-radius: 10px;
+      border: none;
+      background-color: white;
+      -webkit-box-shadow: 0px 2px 16px 0px rgba(99, 99, 99, 0.2);
+      -moz-box-shadow: 0px 2px 16px 0px rgba(99, 99, 99, 0.2);
+      box-shadow: 0px 2px 16px 0px rgba(99, 99, 99, 0.2);
+      padding: 12px;
+      
+    }
+    .listName{
+      height: 61px;
+      font-size: 18px;
+    }
+    .details{
+      height: 100px;
+      resize: none;
+    }
+    .importance{
+      margin: 10px 0px;
+      display: flex;
+      
+      input{
+        -webkit-appearance: none;
+        appearance: none;
+        background-color: #fff;
+        margin: 0;
+        display: grid;
+        place-content: center;
+        font: inherit;
+        width: 1.15em;
+        height: 1.15em;
+        border: 0.15em solid red;
+        border-radius: 0.15em;
+        transform: translateY(-0.075em);
+
+
+        &::before {
+          background-color: red;
+          content: '';
+          width: 23px;
+          height: 23px;
+          transform: scale(0);
+          transition: 220ms transform ease-in-out;
+          box-shadow: inset 1em 1em var(--form-control-color);
+        }
+        &:checked::before {
+          transform: scale(1);
+        }
+      }
+      span{
+        margin-left: 10px;
+        font-size: 20px;
+        align-self: center;
+      }
+    }
+    .buttonsArea{
+      margin: 10px 0px;
+      display: flex;
+      justify-content: space-between;
+
+      .createButton, .cancelButton{
+        width: 145px;
+        height: 50px;
+        border-radius: 25px;
+        border: none;
+        padding: 5px;
+        font-size: 20px;
+        color: white;
+        font-weight: 900;
+      }
+      .cancelButton{
+        background-color: gray;
+      }
+      .createButton{
+        background-color: theme.$pinkish-red;
+      }
+    }
+  }
+}
+/*
+createListForm
+title
+listName
+importance
+details
+buttonsArea
+cancelButton
+createButton
+*/

@@ -1,0 +1,21 @@
+@use '../../assets/styles/theme';
+
+.createListPage{
+  height: 100vh;
+  display: flex;
+  // flex-direction: column;
+
+  // > :nth-child(2){
+  //   overflow-y: scroll;
+  // }
+  // > :nth-child(3){
+  //   width: 100%;
+  //   position: absolute;
+  //   bottom: 0px;
+  // }
+  // > :nth-child(4){
+  //   position: absolute;
+  //   bottom: 80px;
+  //   right: 10px;
+  // }
+}
