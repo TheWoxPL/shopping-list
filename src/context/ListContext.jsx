@@ -6,7 +6,7 @@ const ListContext = createContext();
 
 export function ListProvider({ children }) {
   const [lists, setLists] = useState([
-    { id: uuidv4(), title: 'title1', abstract: 'abstract', items: [], importance: false },
+    { id: uuidv4(), title: 'title1', abstract: 'details', items: [], importance: false },
     { id: uuidv4(), title: 'title2', items: [] }
   ]);
 

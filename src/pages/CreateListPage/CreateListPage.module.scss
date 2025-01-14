@@ -3,4 +3,8 @@
 .createListPage{
   height: 100dvh;
   display: flex;
+
+  > :nth-child(1){
+    position: fixed;
+  }
 }
