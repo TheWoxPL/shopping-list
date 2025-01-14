@@ -1,0 +1,61 @@
+@use '../../assets/styles/theme';
+@use '../../assets/styles/baseStyles';
+
+.editListPage{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  .navigator{
+    display: flex;
+    height: 55px;
+    margin: 0px;
+    padding: 5px 0px;
+    align-items: center;
+    background: theme.$main-gradient;
+
+    .back{
+      height: 40px;
+      flex: 1;
+      filter: invert(1);
+      position: relative;
+      top: 3px;
+      align-self: center;
+    }
+    .title{
+      flex: 10;
+      padding-left: 20px;
+      align-self: center;
+      font-size: 25px;
+      color: white;
+      font-weight: 900;
+    }
+    .options{
+      flex: 1;
+      height: 24px;
+      padding-right: 10px;
+      filter: invert(1);
+    }
+  }
+
+  .groups{
+    display: flex;
+    height: 40px;
+
+    .groupsCategory{
+      display: flex;
+      align-items: center;
+      font-size: 18px;
+      font-weight: 900;
+      margin: 5px;
+      height: 30px;
+    }
+  }
+
+  > :last-child{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+  }
+}
+
