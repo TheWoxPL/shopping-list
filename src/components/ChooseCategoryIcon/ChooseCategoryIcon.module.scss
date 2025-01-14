@@ -1,0 +1,20 @@
+@use '../../assets/styles/theme.scss';
+.chooseCategoryIcon{
+  padding: 2px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  height: 60px;
+  width: 60px;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid rgba(0, 0, 0, 0);
+  img{
+    height: 45px;
+  }
+  span{
+    font-weight: 900;
+    font-size: 9px;
+  }
+}
+ 

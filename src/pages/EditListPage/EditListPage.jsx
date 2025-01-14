@@ -4,6 +4,7 @@ import BackSVG from '../../assets/svgs/back.svg'
 import DotsVerticalSVG from '../../assets/svgs/dots-vertical.svg'
 import ListItem from '../../components/ListItem/ListItem';
 import AddItemButton from '../../components/AddItemButton/AddItemButton';
+import AddItemForm from '../../components/AddItemForm/AddItemForm';
 import { Link } from 'react-router-dom';
 
 export default function EditListPage() {
@@ -26,6 +27,8 @@ export default function EditListPage() {
       <ListItem />
       <ListItem />
       {id}
+
+      <AddItemForm />
       <AddItemButton />
     </div>
   )
