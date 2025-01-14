@@ -8,6 +8,7 @@ import ListItem from '../../components/ListItem/ListItem';
 import AddItemButton from '../../components/AddItemButton/AddItemButton';
 import AddItemForm from '../../components/AddItemForm/AddItemForm';
 import { Link } from 'react-router-dom';
+import Shortcuts from '../../components/Shortcuts/Shortcuts';
 
 export default function EditListPage() {
   const [isAddingItem, setIsAddingItem] = useState(false);
@@ -73,6 +74,7 @@ export default function EditListPage() {
       ))}
       {isAddingItem && <AddItemForm closeForm={handleAddItemClick} listId={id} />}
       <AddItemButton onClick={handleAddItemClick}/>
+      <Shortcuts />
     </div>
   )
 }

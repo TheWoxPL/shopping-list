@@ -1,6 +1,10 @@
 @use '../../assets/styles/theme';
 
 .createListPage{
-  height: 100vh;
+  height: 100dvh;
   display: flex;
+
+  > :nth-child(1){
+    position: fixed;
+  }
 }
