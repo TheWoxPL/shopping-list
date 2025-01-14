@@ -12,14 +12,39 @@ import { Link } from 'react-router-dom';
 export default function EditListPage() {
   const [isAddingItem, setIsAddingItem] = useState(false);
   const { id } = useParams();
-  const { lists } = useContext(ListContext);
+  const { lists, setLists } = useContext(ListContext);
 
   const list = lists.find((list) => list.id === id);
-
+  
   const handleAddItemClick = () => {
-    console.log(list)
-    console.log(list)
     setIsAddingItem(!isAddingItem);
+  };
+
+  const handleRemoveItem = (itemId) => {
+    const updatedLists = lists.map(list => {
+      if (list.id === id) {
+        const updatedItems = list.items.filter(item => item.id !== itemId);
+        return { ...list, items: updatedItems };
+      }
+      return list;
+    });
+    setLists(updatedLists);
+  };
+
+  const handleToggleComplete = (itemId) => {
+    const updatedLists = lists.map(list => {
+      if (list.id === id) {
+        const updatedItems = list.items.map(item => {
+          if (item.id === itemId) {
+            return { ...item, complete: !item.complete };
+          }
+          return item;
+        });
+        return { ...list, items: updatedItems };
+      }
+      return list;
+    });
+    setLists(updatedLists);
   };
 
   return (
@@ -28,7 +53,7 @@ export default function EditListPage() {
         <Link to='/'>
           <img className={styles.back} src={BackSVG}/>
         </Link>
-        <span className={styles.title} >Title</span>
+        <span className={styles.title} >{list.title}</span>
         <img src={DotsVerticalSVG} className={styles.options} />
       </div>
       {/* <div className={styles.groups}>
@@ -36,10 +61,17 @@ export default function EditListPage() {
         <div className={styles.groupsCategory}>Added</div>
         <div className={styles.groupsCategory}>Done</div>
       </div> */}
-      {list.items && list.items.map((item) => (
-          <ListItem key={item.id} />
-        ))}
-      {isAddingItem && <AddItemForm closeForm={handleAddItemClick} listId={id}/>}
+      {list.items && list.items
+        .filter(item => !item.complete)
+        .map((item) => (
+          <ListItem key={item.id} item={item} onRemove={handleRemoveItem} onToggleComplete={handleToggleComplete} />
+      ))}
+      {list.items && list.items
+        .filter(item => item.complete)
+        .map((item) => (
+          <ListItem key={item.id} item={item} onRemove={handleRemoveItem} onToggleComplete={handleToggleComplete} />
+      ))}
+      {isAddingItem && <AddItemForm closeForm={handleAddItemClick} listId={id} />}
       <AddItemButton onClick={handleAddItemClick}/>
     </div>
   )

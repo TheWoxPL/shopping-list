@@ -7,8 +7,8 @@ export default function Shortcuts() {
   return (
     <>
       <div className={styles.shortcuts}>
-        <div className={styles.shortcut}><img src={HomeSVG} /><span>Home</span></div>
         <div className={styles.shortcut}><img src={RecipesSVG} /><span>Recipes</span></div>
+        <div className={`${styles.shortcut} ${styles.home}`}><img src={HomeSVG} /><span>Home</span></div>
         <div className={styles.shortcut}><img src={ProfileSVG} /><span>Me</span></div>
       </div>
     </>

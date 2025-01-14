@@ -21,7 +21,6 @@ export default function AddItemForm
     }); 
     setLists(updatedLists);
     setItemName('');
-    console.log(lists)
   }
 
   return (

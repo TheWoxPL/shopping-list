@@ -1,3 +1,16 @@
+@use '../../assets/styles/theme.scss';
+.oneListImportant{
+  background: theme.$main-gradient !important;
+  color: white !important;
+  .right{
+    img{
+      filter: invert(1) !important;
+    }
+  }
+  .complete{
+    filter: invert(0) !important;
+  }
+}
 .oneList{
   width: 100%;
   height: 164px;

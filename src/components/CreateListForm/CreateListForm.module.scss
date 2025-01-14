@@ -59,13 +59,13 @@
         font: inherit;
         width: 1.15em;
         height: 1.15em;
-        border: 0.15em solid red;
+        border: 0.15em solid theme.$pinkish-red;
         border-radius: 0.15em;
         transform: translateY(-0.075em);
 
 
         &::before {
-          background-color: red;
+          background-color: theme.$pinkish-red;
           content: '';
           width: 23px;
           height: 23px;
@@ -102,7 +102,7 @@
         background-color: gray;
       }
       .createButton{
-        background-color: theme.$pinkish-red;
+        background: theme.$main-gradient;
       }
       a{
         text-decoration: none;
@@ -111,13 +111,3 @@
     }
   }
 }
-/*
-createListForm
-title
-listName
-importance
-details
-buttonsArea
-cancelButton
-createButton
-*/
