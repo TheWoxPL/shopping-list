@@ -1,10 +1,17 @@
 import styles from './OneList.module.scss';
 import DotsVerticalSVG from '../../assets/svgs/dots-vertical.svg'
 import PropTypes from 'prop-types'; 
+import { useNavigate } from 'react-router-dom';
 
-export default function OneList({title, abstract, complete}) {
+export default function OneList({id, title, abstract, complete}) {
+  const navigate = useNavigate();
+
+  function handleClick() {
+    navigate(`/edit-list/${id}`);
+  }
+
   return (
-    <div className={styles.oneList}>
+    <div className={styles.oneList} onClick={handleClick}>
       <div className={styles.left}>
         <span className={styles.title}>{title}</span>
         <span className={styles.abstract}>{abstract}</span>
@@ -23,6 +30,7 @@ OneList.defaultProps = {
 };
 
 OneList.propTypes = {
+  id: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   abstract: PropTypes.string,
   complete: PropTypes.array,

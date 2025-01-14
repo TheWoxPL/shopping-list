@@ -3,4 +3,10 @@
   flex-direction: column;
   align-items: center;
   padding: 0px 14px 50px 14px;
+
+  > :last-child{
+    position: absolute;
+    bottom: 80px;
+    right: 10px;
+  }
 }
