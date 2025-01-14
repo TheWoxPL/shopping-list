@@ -48,7 +48,7 @@ export default function AddItemForm
         <ChooseCategoryIcon />
         <ChooseCategoryIcon />
         <ChooseCategoryIcon />
-
+        <ChooseCategoryIcon />
       </div>
       <div className={styles.buttonsArea}>
         <button className={styles.cancelButton} onClick={closeForm}>

@@ -11,8 +11,9 @@ export default function CreateListForm() {
   const navigate = useNavigate();
 
   function handleSubmit(event) {
+    const abstract = details;
     event.preventDefault();
-    const id = addList({ title, details, importance });
+    const id = addList({ title, abstract, importance });
     navigate('/edit-list/'+id);
   }
 
