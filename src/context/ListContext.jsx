@@ -7,13 +7,18 @@ const ListContext = createContext();
 export function ListProvider({ children }) {
   const mockData = [
     { id: uuidv4(), title: 'Groceries', abstract: 'Weekly grocery shopping', items: [
-      { category: 'Fruits', complete: false, id: uuidv4(), name: 'Apples' },
-      { category: 'Vegetables', complete: false, id: uuidv4(), name: 'Carrots' },
-      { category: 'Dairy', complete: false, id: uuidv4(), name: 'Milk' },
-      { category: 'Bakery', complete: false, id: uuidv4(), name: 'Bread' },
+      { category: 'Fruit', complete: false, id: uuidv4(), name: 'Apples' },
+      { category: 'Vegetable', complete: false, id: uuidv4(), name: 'Carrots' },
+      { category: 'Medicine', complete: false, id: uuidv4(), name: 'Headache pills' },
+      { category: 'Breadstuff', complete: false, id: uuidv4(), name: 'Bread' },
       { category: 'Meat', complete: false, id: uuidv4(), name: 'Chicken' }
     ], importance: false},
-    { id: uuidv4(), title: 'Work Tasks', abstract: 'Tasks to complete at work', items: [], importance: true },
+    { id: uuidv4(), title: 'Birthday party', abstract: 'Things to buy for my birthday party!!', items: [
+      { category: 'Fruit', complete: false, id: uuidv4(), name: 'Apples' },
+      { category: 'Alcohol', complete: false, id: uuidv4(), name: 'A lot of zero alcohol beers' },
+      { category: 'Vegetable', complete: false, id: uuidv4(), name: 'Carrots' },
+      { category: 'Medicine', complete: false, id: uuidv4(), name: 'Headache pills' },
+    ], importance: true },
   ];
   const [lists, setLists] = useState(mockData);
 

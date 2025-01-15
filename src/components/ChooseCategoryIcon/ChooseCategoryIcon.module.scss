@@ -1,11 +1,18 @@
 @use '../../assets/styles/theme.scss';
-.chooseCategoryIcon{
+.chooseCategoryIconClicked{
+  background-color: rgb(255, 255, 255) !important;
+  border: 2px solid theme.$pinkish-red !important;
+  transition: all 0.1s ease;  
+}
+.chooseCategoryIcon, .chooseCategoryIconClicked{
+
+  transition: all 0.2s ease;  
   padding: 2px;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
-  height: 60px;
-  width: 60px;
+  height: 65px;
+  width: 65px;
   align-items: center;
   justify-content: space-between;
   border: 2px solid rgba(0, 0, 0, 0);
