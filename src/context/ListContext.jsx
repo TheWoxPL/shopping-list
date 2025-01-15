@@ -5,10 +5,17 @@ import { v4 as uuidv4 } from 'uuid';
 const ListContext = createContext();
 
 export function ListProvider({ children }) {
-  const [lists, setLists] = useState([
-    { id: uuidv4(), title: 'title1', abstract: 'details', items: [], importance: false },
-    { id: uuidv4(), title: 'title2', items: [] }
-  ]);
+  const mockData = [
+    { id: uuidv4(), title: 'Groceries', abstract: 'Weekly grocery shopping', items: [
+      { category: 'Fruits', complete: false, id: uuidv4(), name: 'Apples' },
+      { category: 'Vegetables', complete: false, id: uuidv4(), name: 'Carrots' },
+      { category: 'Dairy', complete: false, id: uuidv4(), name: 'Milk' },
+      { category: 'Bakery', complete: false, id: uuidv4(), name: 'Bread' },
+      { category: 'Meat', complete: false, id: uuidv4(), name: 'Chicken' }
+    ], importance: false},
+    { id: uuidv4(), title: 'Work Tasks', abstract: 'Tasks to complete at work', items: [], importance: true },
+  ];
+  const [lists, setLists] = useState(mockData);
 
   function addList(newList) {
     const id = uuidv4();
