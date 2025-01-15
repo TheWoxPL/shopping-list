@@ -57,11 +57,7 @@ export default function EditListPage() {
         <span className={styles.title} >{list.title}</span>
         <img src={DotsVerticalSVG} className={styles.options} />
       </div>
-      {/* <div className={styles.groups}>
-        <div className={styles.groupsCategory}>Suggested</div>
-        <div className={styles.groupsCategory}>Added</div>
-        <div className={styles.groupsCategory}>Done</div>
-      </div> */}
+      <div className={styles.abstract} hidden={list.abstract ? list.abstract.length === 0 : true}>{list.abstract ? list.abstract : ''}</div>
       {list.items && list.items
         .filter(item => !item.complete)
         .map((item) => (

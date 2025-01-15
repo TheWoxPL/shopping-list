@@ -2,11 +2,14 @@ import styles from './Shortcuts.module.scss';
 import HomeSVG from '../../assets/svgs/home.svg'
 import RecipesSVG from '../../assets/svgs/book.svg'
 import ProfileSVG from '../../assets/svgs/profile.svg'
+import { useNavigate } from 'react-router-dom';
 
 
 export default function Shortcuts() {
+  const navigate = useNavigate();
+
   function handleHomeClick() {
-    window.location.href = '/'
+    navigate('/');
   }
   return (
     <>

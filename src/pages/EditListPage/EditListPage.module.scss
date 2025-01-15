@@ -10,6 +10,7 @@
     display: flex;
     height: 55px;
     margin: 0px;
+    margin-bottom: 5px;
     padding: 5px 0px;
     align-items: center;
     background: theme.$main-gradient;
@@ -29,6 +30,8 @@
       font-size: 25px;
       color: white;
       font-weight: 900;
+      height: 25px;
+      overflow: hidden;
     }
     .options{
       flex: 1;
@@ -36,6 +39,27 @@
       padding-right: 10px;
       filter: invert(1);
     }
+  }
+  .abstract{
+    max-width: 100%;
+    min-height: auto;
+    max-height: 250px;
+    overflow-y: scroll;
+    font-size: 17px;
+    flex-shrink: 0; /* Prevents shrinking */
+    flex-grow: 0; 
+    color: white;
+    font-weight: 400;
+    background: theme.$main-gradient;
+    padding: 5px 10px 5px 5px;
+
+    border: 3px solid white;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    -webkit-box-shadow: 0px 2px 16px 3px rgba(99, 99, 99, 0.2);
+    -moz-box-shadow: 0px 2px 16px 3px rgba(99, 99, 99, 0.2);
+    box-shadow: 0px 2px 16px 3px rgba(99, 99, 99, 0.2);
+    margin: 5px;
   }
 
   .groups{
