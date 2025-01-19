@@ -1,0 +1,19 @@
+f6f5fa4 feat: category choosing
+673742c feat: mock data
+0de9e55 feat: add details
+cd0d685 fix: button aligment
+9235fb4 fix: repair bottom overflow
+97a6eae fix: fixed position
+9ee312a fix: font resize
+1f8335d fix: mainlist scrollable
+46a589d feat: colors change
+e700cad feat: adding, redirecting and data passing
+01ca9d7 feat: add additemform
+faa1e11 feat: add simple list editing
+e7e22bd feat: add createlistform component
+3834faf feat: add createlistform component
+912bf63 feat: add addlist component
+6806bfc feat: add onelist element component with props
+3381a4a feat: add working homepage with navigation
+e4e194f feat: create navbar component and homepage
+52306e5 first commit
